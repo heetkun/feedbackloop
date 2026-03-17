@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API_KEY = import.meta.env.VITE_OPENROUTER_KEY
+const API_KEY = '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'
 
 export default function App() {
   const [bullets, setBullets] = useState('')
