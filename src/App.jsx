@@ -42,9 +42,11 @@ ${bullets}`
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${API_KEY}`,
+          'HTTP-Referer': 'https://feedbackloop-eta.vercel.app',
+          'X-Title': 'FeedbackLoop',
         },
         body: JSON.stringify({
-         model: 'stepfun/step-3.5-flash:free',
+          model: 'stepfun/step-3.5-flash:free',
           messages: [{ role: 'user', content: prompt }]
         })
       })
