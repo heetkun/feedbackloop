@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API_KEY = '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'
+const API_KEY = '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'
 
 export default function App() {
   const [bullets, setBullets] = useState('')
