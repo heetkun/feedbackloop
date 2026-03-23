@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const API_KEY = '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'
+const API_KEY = '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'
 
 export default function App() {
   const [bullets, setBullets] = useState('')
@@ -46,7 +46,7 @@ ${bullets}`
           'X-Title': 'FeedbackLoop',
         },
         body: JSON.stringify({
-          model: 'stepfun/step-3.5-flash:free',
+          model: 'nvidia/nemotron-3-super-120b-a12b:free',
           messages: [{ role: 'user', content: prompt }]
         })
       })
